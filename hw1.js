@@ -12,13 +12,13 @@ console.log(Math.min(...arr));
 // а не напрямую.
 
 function createCounter() {
-  let counter = 0;
+  let count = 0;
   return {
     increment(number = 1) {
-      return (counter += number);
+      return (count += number);
     },
     decrement(number = 1) {
-      return (counter -= number);
+      return (count -= number);
     },
   };
 }
